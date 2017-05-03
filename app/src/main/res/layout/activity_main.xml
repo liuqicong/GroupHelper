@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f3f2"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/main_topbar"
+            android:gravity="center"
+            android:paddingLeft="@dimen/topbar_height"
+            android:paddingRight="@dimen/topbar_height"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="@string/app_name"
+            />
+
+
+        <ImageView
+            android:id="@+id/main_checkbox"
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/switch_off"/>
+
+        <TextView
+            android:id="@+id/topbar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="添加群"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_recyclerview"/>
+
+
+</LinearLayout>
